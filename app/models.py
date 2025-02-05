@@ -9,7 +9,7 @@ def get_blog_photo_path(instance, filename):
     return f"blogs_photo/{instance.user.id}_{instance.user.name.replace(' ', '_')}/{filename}"
 
 def get_profile_photo_path(instance, filename):
-    return f"profile_photo/{instance.user.id}_{instance.user.name.replace(' ', '_')}/{filename}"
+    return f"profile_photo/{instance.id}_{instance.name.replace(' ', '_')}/{filename}"
 
 def get_sample_photo_path(instance, filename):
     return f"sample_photo/{filename}"

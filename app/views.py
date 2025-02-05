@@ -20,14 +20,6 @@ from .utils import generate_otp, verify_otp
 
 User = get_user_model()
 
-
-# class UserSignupView(CreateAPIView):
-#     """User Signup"""
-
-#     serializer_class = SignupSerializer
-#     queryset = User.objects.all()
-
-
 class UserSignupView(APIView):
     """User Signup"""
 
