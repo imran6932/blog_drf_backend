@@ -32,6 +32,7 @@ DEBUG = True
 ALLOWED_HOSTS = ["127.0.0.1", "blog.imranansari.in","blog-api.imranansari.in"]
 
 
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -164,6 +165,10 @@ CORS_ALLOWED_ORIGINS = [
     "https://blog.imranansari.in",
 ]
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://blog-api.imranansari.in",
+    "http://blog-api.imranansari.in",
+]
 
 # JWT Settings
 SIMPLE_JWT = {
